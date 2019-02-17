@@ -4,21 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <link href="~/Content/Login.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
 </head>
- 
-    <body style="background-image: url(../../Content/img/50025.jpg);background-size:cover">
-       <div class="container-fluid">
+
+<body style="background: url(../../Content/img/50025.jpg) no-repeat top center fixed;background-size:cover">
+    <div class="container-fluid">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - MT</p>
-        </footer>
+    </div>
+    <footer>
+        <div class="row">
+            <div style="text-align:center" class="col">
+                <a href="#">
+                    <img style="max-height:50px;max-width:100%;margin:50px,50px,50px,50px;" src="~/Content/img/clipart171363.png" />
+                </a>
+                <a href="#">
+                    <img style="max-height:50px;max-width:100%" src="~/Content/img/clipart2661594.png" />
+                </a>
+                <a href="#">
+                    <img style="max-height:50px;max-width:100%;margin:50px,50px,50px,50px;" src="~/Content/img/clipart365652.png" />
+                </a>
+            </div>
         </div>
-        <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-        <script src="~/Scripts/bootstrap.min.js"></script>
-    </body>
-    
-    
+        <p class="text-center" style="color:white;font-family:'Adobe Devanagari'">&copy; @DateTime.Now.Year - MT</p>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+
+
 
 </html>

@@ -3,27 +3,59 @@
     ViewBag.Title = "RUG";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div style="text-align:center">
-    <img style="max-height:300px;transform:rotate(180deg)" src="~/Content/img/162b6d8cb485a3ac91a56c3f3e36534d.png" />
-    <img src="~/Content/img/Cool Text - Reversed Umbrella 314855565896977.png" />
-</div>
-<div style="transform:translateY(150px)" class="row">
-    <div style="text-align:right" class="col-4">
-        <a href="#">
-            <img style="width:200px;height:200px;" src="~/Content/img/clipart171363.png" />
-        </a>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<div class="row text-center">
+    <div class="col-xl-12" style="text-align:center">
+        <img style="max-height:200px;width:200px" src="~/Content/img/162b6d8cb485a3ac91a56c3f3e36534d.png" />
     </div>
-    <div style="text-align:center" class="col-4">
-        <a href="#">
-            <img style="width:200px;height:200px;text-align:center" src="~/Content/img/clipart2661594.png" />
-        </a>
-
-    </div>
-    <div style="text-align:left" class="col-4">
-        <a href="#">
-            <img style="width:200px;height:200px;text-align:left" src="~/Content/img/clipart365652.png" />
-        </a>
-
+    <div class="col-xl-12" style="text-align:center">
+        <img style="transform:rotate(90deg);max-height:700px;width:1000px" src="~/Content/img/Cool Text - Reversed Umbrella 314855565896977.png" />
     </div>
 </div>
+<hr />
+    <div style="margin-top:2em;" class="container">
+        <div class="d-flex justify-content-center h-50">
+            <div style="" class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div style="height:500px" class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?<a href="#">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
